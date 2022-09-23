@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: url(/assets/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    margin-top: 32px;
+}
+
+header{
+    max-width: 580px;
+    margin: auto;
+    gap: 24px;
+    text-align: center;
+}
+
+header > div{
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 100%;
+    background-image: linear-gradient(to right, #9572FC, #43E7AD, #E2D45C);
+    transition: transform 0.3s;
+
+    animation: fromTop 0.8s 0.4s backwards;
+}
+
+header > div:hover{
+    transform: scale(1.1);
+}
+
+body * {
+    font-family: 'inter', sans-serif;
+    line-height: 160%;
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main section:nth-child(1) {
+    animation-delay: 0.8s;
+}
+
+main section:nth-child(2) {
+    animation-delay: 0.9s;
+}
+
+main section:nth-child(3) {
+    animation-delay: 1s;
+}
+
+header img{
+    width: 130px;
+    border-radius: 100%;
+    padding: 4px;
+}
+
+section{
+    padding-top: 4px;
+    color: white;
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50%, #E2D45C 100%);
+
+    animation: fromTop 0.8s 0.8s backwards;
+}
+
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+}
+
+section h2 {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section ul{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.gamesList img{
+    width: 90px;
+    border-radius: 8px;
+}
+
+.ChannelList img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+/* animations */
+
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
